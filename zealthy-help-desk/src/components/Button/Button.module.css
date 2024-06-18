@@ -1,0 +1,35 @@
+.primary {
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 3em;
+  background-color: var(--zealthy-dark-green);
+  color: white;
+  font-size: medium;
+  word-wrap: break-word;
+  max-width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.primary:hover {
+  background-color: var(--zealthy-light-green);
+  color: #383838;
+}
+
+.secondary {
+  width: 150px;
+  height: 50px;
+  border: .15em solid var(--zealthy-light-green);
+  border-radius: 3em;
+  background-color: white;
+  color: #383838;
+  font-size: medium;
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+.secondary:hover {
+  border-color: var(--zealthy-dark-green);
+  background-color: var(--zealthy-pale-green);
+}

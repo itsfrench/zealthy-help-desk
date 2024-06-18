@@ -1,0 +1,60 @@
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputContainer label {
+  padding: .5em;
+  font-size: small;
+  color: var(--medium-grey)
+}
+
+.inputContainer ::placeholder {
+  color: var(--light-grey);
+  padding-left: .1em;
+  font-size: medium;
+}
+
+.nameField {
+  border-style: solid;
+  border-color: var(--zealthy-light-green);
+  outline: none;
+  border-radius: .75em;
+  width: 25vw;
+  height: 4vh;
+  margin: .2em;
+  padding-left: .3em;
+  font-size: medium;
+}
+
+
+.emailField {
+  border-style: solid;
+  border-color: var(--zealthy-light-green);
+  outline: none;
+  border-radius: .75em;
+  width: 25vw;
+  height: 4vh;
+  margin: .2em;
+  padding-left: .3em;
+  font-size: medium;
+}
+.emailField ::placeholder {
+  color: var(--light-grey);
+}
+
+
+.textField {
+  border-style: solid;
+  border-color: var(--zealthy-light-green);
+  outline: none;
+  border-radius: .75em;
+  height: 20vh;
+  width: 25vw;
+  max-width: 25vw;
+  margin: .2em;
+  padding-left: .3em;
+  padding-top: .3em;
+  font-size: medium;
+}
+

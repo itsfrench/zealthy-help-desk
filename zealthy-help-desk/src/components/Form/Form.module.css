@@ -1,0 +1,19 @@
+.helpForm {
+  padding: 2em;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: fit-content;
+  border: 1px solid var(--zealthy-light-green);
+  border-radius: 1em;
+}
+
+.helpForm form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,25 @@
+.page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin-top: 3em;
+  max-height: 85vh;
+  width: 100%;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+}
+.mainContainer h2 {
+  text-align: center;
+  padding: .2em;
+}
+.mainContainer p {
+  text-align: center;
+  padding: .2em;
+}
