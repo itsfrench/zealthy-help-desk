@@ -29,6 +29,7 @@ const Form = ({ formObj, buttonText, handleSubmit }) => {
         ticketValue={field.ticketValue}
         inputType={field.inputType}
         onChange={handleInputChange}
+        key={field.label}
       ></Input>
     )
   })
