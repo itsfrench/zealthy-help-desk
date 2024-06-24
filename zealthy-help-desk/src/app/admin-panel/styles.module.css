@@ -1,0 +1,14 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+  height: 100%;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}

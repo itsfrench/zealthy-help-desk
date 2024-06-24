@@ -1,0 +1,51 @@
+.ticket {
+  display: flex;
+  flex-direction: row;
+  align-content: start;
+  align-items: center;
+  height: 20vh;
+  border: 1px solid var(--zealthy-light-green);
+  border-radius: 1em;
+  margin: 0.25em;
+  margin-left: 0.5em;
+}
+.mainInfo {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin: 1em 1em 1em 1em;
+  height: 100%;
+  width: 12vw;
+  text-align: center;
+}
+.details {
+  display: flex;
+  align-items: center;
+  margin: 1em 1em 1em 1em;
+  font-size: small;
+  height: 100%;
+  word-wrap: break-word;
+  width: 12vw;
+  text-align: center;
+  justify-content: center;
+}
+.status {
+  width: 8vw;
+  text-align: center;
+  margin: 1em 3.5em 1em 3.5em;
+}
+.date {
+  font-size: small;
+  color: var(--light-grey);
+  text-align: left;
+  width: 12vw;
+  text-align: center;
+  margin: 1em 1em 1em 1em;
+}
+.button {
+  display: flex;
+  width: 12vw;
+  margin: 1em 1em 1em 1em;
+  justify-content: center;
+}

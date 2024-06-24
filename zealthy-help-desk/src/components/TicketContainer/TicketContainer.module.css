@@ -1,0 +1,49 @@
+.ticketContainer {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: auto;
+  width: fit-content;
+  border: 1px solid var(--zealthy-light-green);
+  border-radius: 1em;
+}
+.titles {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.title {
+  width: 12vw;
+  margin: 1em 1em 1em 1em;
+}
+
+.emailPortal {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 80vw;
+}
+
+.emailTitleContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.emailTitle {
+  margin-right: 0.25em;
+}
+
+.emailTitleGreen {
+  margin-right: 0.25em;
+  color: var(--zealthy-dark-green);
+}
+.emailForm {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
