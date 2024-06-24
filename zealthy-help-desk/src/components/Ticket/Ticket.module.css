@@ -49,3 +49,36 @@
   margin: 1em 1em 1em 1em;
   justify-content: center;
 }
+
+@media screen and (max-width:480px) {
+  .ticket {
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    align-items: center;
+    height: 40vh;
+    width: 80vw;
+  }
+  .mainInfo {
+    width: 80vw;
+    margin: .5em;
+  }
+  .details {
+    width: 80vw;
+    margin: .5em;
+  }
+  .status {
+    width: 40vw;
+    margin: .5em;
+  }
+  .date {
+    width: 80vw;
+    margin: .5em;
+  }
+  .button {
+    display: flex;
+    width: 40vw;
+    margin: .5em;
+    justify-content: center;
+  }
+}

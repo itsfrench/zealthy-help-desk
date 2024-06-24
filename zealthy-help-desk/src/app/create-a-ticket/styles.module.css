@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 4rem;
+  padding: 4em;
   height: 100%;
 }
 
@@ -21,4 +21,13 @@
 .mainContainer p {
   text-align: center;
   padding: 0.2em;
+}
+
+@media screen and (max-width:480px) {
+  .page {
+    padding: 1em;
+  }
+  .mainContainer {
+    margin-top: 1em;
+  }
 }

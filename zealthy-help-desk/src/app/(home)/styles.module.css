@@ -10,7 +10,7 @@
 .mainContainer {
   margin-top: 8em;
   width: 70vw;
-  height: 50vh;
+  height: 45vh;
   border-radius: 1em;
   padding: 2em;
   border: 0.15em solid var(--zealthy-light-green);
@@ -29,4 +29,36 @@
   width: 30vw;
   height: 30vh;
   color: #383838;
+  padding-left: 2em;
+}
+
+@media screen and (max-width:480px) {
+  .page {
+    padding: 1em
+  }
+  .mainContainer {
+    margin-top: 1em;
+    padding: 1em;
+  }
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 50vw;
+    height: 30vh;
+    color: #383838;
+  }
+  .content {
+    margin-bottom: 1em;
+    width: 100%;
+  }
+  .image {
+    display: none;
+  }
+  .button {
+    padding-top: 5em;
+  }
 }

@@ -12,3 +12,12 @@
   justify-content: center;
   margin-top: 2em;
 }
+
+@media screen and (max-width:480px) {
+  .page {
+    padding: 1em;
+  }
+  .mainContainer {
+    margin-top: 1em;
+  }
+}

@@ -47,3 +47,34 @@
   margin-top: 2em;
   margin-bottom: 2em;
 }
+
+@media screen and (max-width:480px) {
+
+  .ticketContainer {
+    margin-top: .5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 90vw;
+    border: none;
+  }
+
+  .titles { 
+    display: none;
+  }
+  .emailTitleContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70vw;
+    font-size: small;
+  }
+  .emailForm {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}

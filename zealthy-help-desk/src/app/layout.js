@@ -9,6 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <meta content="width=device-width, initial-scale=1" name="viewport" />
       <body>
         <main className={styles.layout}>
           <Header />

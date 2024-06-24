@@ -40,6 +40,7 @@ const CreateATicket = () => {
             formObj={formContent.form}
             buttonText={formContent.buttonText}
             handleSubmit={handleFormSubmit}
+            
           />
         )}
         {formError && (

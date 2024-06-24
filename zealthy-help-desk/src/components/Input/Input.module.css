@@ -1,6 +1,8 @@
 .inputContainer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .inputContainer label {
@@ -43,4 +45,20 @@
   padding-left: 0.3em;
   padding-top: 0.3em;
   font-size: medium;
+}
+
+@media screen and (max-width:480px) {
+  
+  .smallText { 
+    width: 53vw;
+    font-size: small;
+  }
+  .smallText ::placeholder {
+    color: var(--light-grey);
+    font-size: small;
+  }
+  .textField { 
+    width: 53vw;
+    max-width: 53vw;
+  }
 }

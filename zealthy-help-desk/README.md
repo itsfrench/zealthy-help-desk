@@ -1,33 +1,20 @@
-## Zealthy Help Desk - Take-Home Exercise
+## Details on what I built:
 
-The coding exercise is to create a basic “help desk” / support system ticket management
-system.
+I built this Help Desk app built using Next.js, utilizing the server actions for data fetching and app router to organize the different pages. I utilized Supabase for the database, creating a simple SQL table to manage ticket the ticket. 
 
-On the main page of the app, end users of the service should be able to submit support ticket
-requests. Necessary fields include name, email and a description of the problem they are
-experiencing.
+- I used Next.js's `Image` for optimized image handling and `Link` for navigation.
+- I chose supabase as it's well documented and easy to use,  and it's simple to integrate with Next.js.
+- I wanted to keep the components modular and reusable, allowing me to reuse the components throughout the app. 
+- I created a copy file to store content and form input data for easy maintenance.
 
-On a separate page, the backend admin panel, support staff should be able to see a list
-summary of each ticket, including status. They should be able to drill down into the ticket and
-respond to a request, as well as update the status of the ticket. Possible statuses are “new”, “in
-progress”, and “resolved”.
+## What I would improve:
 
-It is preferred that the front-end UI is implemented using React, with the backend implemented
-in a language/framework of your choosing.
+   - Although I did add some media queries for mobile responsiveness, I would like to add more and improve the responsiveness on mobile and tablet. 
 
-Please deploy your completed exercise to the web somewhere (using Vercel or similar) and
-include the demo URL when submitting your solution.
+   - I started building the '/create-a-ticket' page first, and kept all of the functionality at the parent level and prop passed everything down into lower level child components, but when I began building the '/admin-panel', I moved functionality for changing ticket status and emailing customers into the TicketContainer and the Ticket component, but I would for this to be consistent across the application and move it higher into the structure.
 
-Note: For sake of time, the app does not need to send email. Please output via logging instead,
-“Would normally send email here with body: ...”
+   - Instead of fetching ticket data on page load for the `/admin-panel`, I would use `getServerSideProps` and/or implement caching to speed up the hydration of the '/admin-panel' page. Additionally, I would add checks to refetch data when a new ticket is created or when a ticket's status changes.
 
-You should attempt to complete this in less than 5 hours of dedicated time and submit the
-completed exercise as a github repo URL to Kyle (kyle@getzealthy.com), Brie,
-(brie@getzealthy.com) and Shanti (shantibraford@gmail.com). You may complete this in one or
-more sittings, and should do so within a few days of receiving the exercise prompt.
+   - I added a column to the database that is currently not being used (`resolved_date`) to future proof resolving tickets. I would like to move the changing of ticket status to 'completed' to the form where you can email the customer. I would also like to either move completed tickets to another section or add a filter to the TicketContainer to filter by ticket status, including 'completed'. 
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

@@ -17,3 +17,15 @@
   align-items: center;
   justify-content: center;
 }
+
+@media screen and (max-width:480px) {
+  .helpForm form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 50vw;
+    padding: 1em
+  }
+}

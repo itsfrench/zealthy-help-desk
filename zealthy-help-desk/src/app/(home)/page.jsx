@@ -12,15 +12,16 @@ const Home = () => {
     <div className={styles.page}>
       <div className={styles.mainContainer}>
         <div className={styles.textContainer}>
-          <Heading>{content.header}</Heading>
-          <BodyText>{content.description}</BodyText>
-          <Button text={content.buttonText} href="/create-a-ticket" />
+          <Heading className={styles.content}>{content.header}</Heading>
+          <BodyText className={styles.content}>{content.description}</BodyText>
+          <Button className={styles.button}text={content.buttonText} href="/create-a-ticket" />
         </div>
         <Image
           src="images/desk.svg"
           width={400}
-          height={400}
+          height={350}
           alt="An image of a laptop with a lamp, a mug, and a cactus."
+          className={styles.image}
         />
       </div>
     </div>

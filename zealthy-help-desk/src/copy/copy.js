@@ -5,7 +5,7 @@ const copy = {
       link: '/',
     },
     help: {
-      text: 'Submit a Ticket',
+      text: 'Help',
       link: '/create-a-ticket',
     },
     admin: {
